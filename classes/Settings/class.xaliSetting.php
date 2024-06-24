@@ -34,7 +34,7 @@ class xaliSetting extends ActiveRecord {
 	 * @db_fieldtype        integer
 	 * @db_length           1
 	 */
-	protected $is_online = 0;
+	protected ?int $is_online = 0;
 	/**
 	 * @var int
 	 *
@@ -50,7 +50,7 @@ class xaliSetting extends ActiveRecord {
 	 * @db_fieldtype        integer
 	 * @db_length           1
 	 */
-	protected int $activation = 0;
+	protected ?int $activation = 0;
 	/**
 	 * @var int
 	 *
@@ -111,7 +111,7 @@ class xaliSetting extends ActiveRecord {
 
 	public function getActivation(): int
     {
-		return $this->activation;
+	    return $this->activation ?? 0;
 	}
 
 	public function setActivation(int $activation): void
