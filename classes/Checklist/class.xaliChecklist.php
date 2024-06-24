@@ -42,7 +42,7 @@ class xaliChecklist extends ActiveRecord {
 	 * @db_fieldtype        integer
 	 * @db_length           8
 	 */
-	protected int $last_edited_by;
+	protected ?int $last_edited_by;
 	/**
 	 * @var int
 	 *
@@ -50,7 +50,7 @@ class xaliChecklist extends ActiveRecord {
 	 * @db_fieldtype        integer
 	 * @db_length           8
 	 */
-	protected int $last_update;
+	protected ?int $last_update;
 
 
 	/**
