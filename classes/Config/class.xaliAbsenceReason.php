@@ -145,7 +145,7 @@ class xaliAbsenceReason extends ActiveRecord {
 	 * @param int $has_comment
 	 */
 	public function setHasComment($has_comment) {
-		$this->has_comment = $has_comment;
+		$this->has_comment = (int) $has_comment;
 	}
 
 
