@@ -122,7 +122,7 @@ class xaliAbsenceReason extends ActiveRecord {
 
 	public function setHasComment($has_comment): void
     {
-		$this->has_comment = $has_comment;
+		$this->has_comment = (int) $has_comment;
 	}
 
 	public function hasUpload(): bool
